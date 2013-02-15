@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+     <head>
+
+          <meta name="viewport" content="width=device-width; height=device-height; user-scalable=no" />
+
+          <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+          <title>Beer Me</title>
+
+          <link rel="stylesheet" href="master.css" type="text/css" />
+
+          <script type="text/javascript" src="scripts/phonegap.js"></script>
+          <script type="text/javascript" src="scripts/jquery.js"></script>
+
+          
+     </head>
+
+     <body>
+		<div class="header-bar">
+        	
+        </div>
+        
+		<div class="botom-bar">
+        	<ul>
+            	<li class="on"><img src="images/icones/home.png" alt="Home"><br />Home</li>
+                <li><img src="images/icones/studio.png" alt="Studio"><br>Studio</li>
+                <li><img src="images/icones/portfolio.png" alt="Portfolio"><br>Portfolio</li>
+                <li><img src="images/icones/news.png" alt="News"><br>News</li>
+                <li><img src="images/icones/contact.png" alt="Contact"><br>Contact</li>
+            </ul>
+        </div>
+     </body>
+	<script>
+		$(document).ready(function(){
+			$('.botom-bar ul li').click(function(){
+				confirm($(this).find('img').attr('src'));
+			})
+		});
+	</script>
+</html>
